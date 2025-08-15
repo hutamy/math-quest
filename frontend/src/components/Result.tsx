@@ -38,19 +38,11 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
             <div className="text-sm text-gray-600">XP Gained</div>
           </div>
           <div className="text-center">
-            <div className="text-sm text-gray-600">
-              {data.streak.current && `Day Streak: ${data.streak.current} 🔥`}
+            <div className="flex items-center justify-center mb-2">🔥</div>
+            <div className="text-2xl font-bold text-gray-800">
+              {data.streak.current} {data.streak.current == 1 ? "Day" : "Days"}
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="p-4">
-        <div className="flex items-center gap-3">
-          <div>
-            <p className="text-sm text-gray-600">
-              Keep it up! You're building great learning habits.
-            </p>
+            <div className="text-sm text-gray-600">Streak</div>
           </div>
         </div>
       </div>

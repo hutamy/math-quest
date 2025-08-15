@@ -50,6 +50,12 @@ LOG_LEVEL=info
 PORT=3000" > .env
 ```
 
+#### Install depenndencies
+
+```bash
+npm install
+```
+
 #### Setup database
 
 Run migrations and seeders before start the application
@@ -80,6 +86,12 @@ cd frontend
 
 ```bash
 echo "VITE_API_BASE_URL=http://localhost:3000" > .env
+```
+
+#### Install depenndencies
+
+```bash
+npm install
 ```
 
 #### Run application
@@ -122,8 +134,6 @@ math-quest/
 ```
 http://localhost:3000/docs
 ```
-
-<!-- Todo -->
 
 Total time spend:
 
