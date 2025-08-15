@@ -125,12 +125,18 @@ http://localhost:3000/docs
 
 <!-- Todo -->
 
-Total time spend: `5h 45mins`
+Total time spend:
+
+- Total time: 5h 45mins
+- Backend: 3h
+- Frontned: 2h 30mins
+- Documentation: 15mins
 
 What I didn't build:
 
-- CI
-- Progress animations and micro-interactions
+- CI: Omitted due to the 4–6 hour timebox, prioritized delivering functional backend and frontend over setting up pipelines
+- Progress animations and micro-interactions: Skipped to focus on implementing core lesson flow and backend API integration.
+- Detailed test coverage for frontend: Chose to invest testing time in backend unit tests to validate core business logic.
 
 Approach to designing engaging post-lesson progress reveals
 
