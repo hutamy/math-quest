@@ -135,34 +135,37 @@ math-quest/
 http://localhost:3000/docs
 ```
 
-Total time spend:
+Total Time Spent:
 
-- Total time: 5h 45mins
+- Total: 5h 45m
 - Backend: 3h
-- Frontned: 2h 30mins
-- Documentation: 15mins
+- Frontend: 2h 30m
+- Documentation: 15m
 
 What I didn't build:
 
-- CI: Omitted due to the 4–6 hour timebox, prioritized delivering functional backend and frontend over setting up pipelines
-- Progress animations and micro-interactions: Skipped to focus on implementing core lesson flow and backend API integration.
-- Detailed test coverage for frontend: Chose to invest testing time in backend unit tests to validate core business logic.
+- CI: Omitted due to the 4–6 hour timebox, prioritized delivering functional backend and frontend over setting up pipelines. In a real-world project, CI would be implemented early to ensure consistent testing and deployment.
+- Progress animations and micro-interactions: Skipped to focus on implementing core lesson flow and backend API integration. Visual polish would be a follow-up step once functionality is stable.
+- Detailed test coverage for frontend: Allocated testing time to backend unit tests to validate core business logic. Frontend verification was done manually due to time constraints.
 
 Approach to designing engaging post-lesson progress reveals
 
-- Milestone celebration
-- Leaderboards and highlight progress
+- Milestone Celebrations — Display animated progress bars, achievement badges, and congratulatory messages when learners hit significant milestones.
+- Leaderboards & Progress Highlights — Show rankings among peers and personal improvement trends to tap into healthy competition and motivate consistent learning.
 
 How you'd handle 1000+ students using this simultaneously
 
-- To prevent overlod on backend we can implement queue for real time progress update and implementing cache to handle high conncurrency. While on frontend we can implement cdn for static data.
+- Implement a message queue for real-time progress updates to prevent backend overload.
+- Use caching layers (e.g., Redis) to handle high concurrency for frequently accessed data.
+- Serve static assets through a CDN to reduce server load and improve response times.
 
 2-3 things that work well for teens
 
-- Gamification (points, levels, streak)
-- Bite sixe lesson for shot attention span
+- Gamification elements such as points, levels, and streak tracking to keep learning engaging.
+- Bite-sized lessons that fit shorter attention spans and busy schedules.
 
 2-3 specific improvements
 
-- Social features like leaderboard, share streak, or challange a friend
-- Interactive problem solving (drag-and-drop, quick quizzes)
+- Add social features such as leaderboards, streak sharing, and friend challenges.
+- Introduce interactive problem-solving formats like drag-and-drop and timed quizzes.
+- Implement personalized learning paths to adjust difficulty based on individual performance.
